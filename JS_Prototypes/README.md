@@ -1,4 +1,4 @@
-**Context:[`protoChain.js`](add-link-here)**<br>
+**Context:[`protoChain.js`](https://github.com/PhoenixAthens/JS-Adventures/blob/main/JS_Prototypes/protoChain.js)**<br>
 `Q1:` In the following code
 ```js
 let user = {
