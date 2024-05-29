@@ -53,6 +53,6 @@ let doctor = Object.create(verifiedMember, {
 ```
 Now, the `for-in` loop will include the `name` property when iterating over the `doctor` object.
 
-Alternatively, you can use the `Object.keys()` method to get an array of all enumerable properties (including non-enumerable properites if you pass `Object.getOwnPropertyNames(doctor)` instead) of the `Object.getPropertyNames()` method to get an array of all properties (enumerable and non-enumerable) of the `doctor` object itself (excluding inherited properties).
+Alternatively, you can use the `Object.keys()` method to get an array of all enumerable properties (including non-enumerable properites if you pass `Object.getOwnPropertyNames(doctor)` instead), or the `Object.getPropertyNames()` method to get an array of all properties (enumerable and non-enumerable) of the `doctor` object itself (excluding inherited properties).
 
 ---
