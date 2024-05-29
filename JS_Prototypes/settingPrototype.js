@@ -39,6 +39,28 @@ console.log(Object.getPrototypeOf(str));
 // {}
 
 str.age = 89;
-console.log(str);
+console.log(str); //[String: 'JukeBox'] { age: 89 }
 console.log(str.__proto__);
 console.log(Object.getPrototypeOf(str));
+// {}
+// {}
+
+//Another way to set prototype for an object
+let objectCreate = Object.create(verifiedMember, {
+  name: {
+    value: "Dr. Hourani",
+  },
+});
+console.log(objectCreate);
+console.log(objectCreate.__proto__);
+console.log(Object.getPrototypeOf(objectCreate));
+// {}
+// { verifiedFlag: false }
+// { verifiedFlag: false }
+
+console.log(objectCreate.name + " " + objectCreate.verifiedFlag);
+console.log(objectCreate.__proto__);
+console.log(Object.getPrototypeOf(objectCreate));
+// Dr. Hourani false
+// { verifiedFlag: false }
+// { verifiedFlag: false }
