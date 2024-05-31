@@ -70,3 +70,21 @@ for (const propName in doctor_3) {
 // admin
 console.log(Object.keys(doctor_3)); // [ 'name' ]
 console.log(Object.getOwnPropertyNames(doctor_3)); // [ 'name', 'age' ]
+
+Object.defineProperty(doctor, "salary", {
+  value: 232_000,
+  enumerable: true,
+});
+for (let prop in doctor) {
+  console.log(prop);
+}
+// <if enumerable on `salary` is set to false>, OUTPUT:
+// verified
+// intoduceSelf
+// admin
+
+// <if enumerable on `salary` is set to true>, OUTPUT:
+// salary
+// verified
+// intoduceSelf
+// admin
